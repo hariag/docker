@@ -1,7 +1,7 @@
 FROM         ubuntu:16.04
 MAINTAINER    Haria Guo(haria.guo@gmail.com)
 
-RUN sed -i 's@//archive.ubuntu@//mirrors.aliyun@' /etc/apt/sources.list
+#RUN sed -i 's@//archive.ubuntu@//mirrors.aliyun@' /etc/apt/sources.list
 
 RUN apt update && apt install -y git wget procps vim net-tools unzip build-essential libxvidcore-dev libx264-dev libx265-dev  python-numpy python-dev cmake libavcodec-dev libavformat-dev libswscale-dev libgphoto2-dev libavresample-dev libgtk2.0-dev
 
