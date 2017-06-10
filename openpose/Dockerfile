@@ -1,4 +1,4 @@
-FROM         nvidia/cuda:8.0-cudnn5-devel-ubuntu16
+FROM         nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
 MAINTAINER    Haria Guo(haria.guo@gmail.com)
 
 # RUN sed -i 's@//archive.ubuntu@//mirrors.aliyun@' /etc/apt/sources.list
