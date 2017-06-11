@@ -7,4 +7,4 @@ RUN apt update && apt-get install -y sudo git wget vim lsb-release libcanberra-g
 
 RUN git clone https://github.com/hariag/end-to-end-for-chinese-plate-recognition.git
 
-WORKDIR /openpose
+WORKDIR /end-to-end-for-chinese-plate-recognition
