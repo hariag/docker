@@ -1,5 +1,5 @@
 FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
-MAINTAINER Aaron Markham <aaronmarkham@fb.com>
+MAINTAINER Guo Haria <haria.guo@gmail.com>
 
 # caffe2 install with gpu support
 
