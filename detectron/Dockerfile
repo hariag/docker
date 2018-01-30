@@ -63,7 +63,7 @@ ENV LIBRARY_PATH /usr/local/lib:$LD_LIBRARY_PATH
 RUN python -c 'from caffe2.python import core' 2>/dev/null && echo "Success" || echo "Failure"
 
 # Install Python dependencies
-RUN pip install numpy pyyaml matplotlib opencv-python>=3.0 setuptools Cython mock
+RUN pip install numpy pyyaml matplotlib opencv-python>=3.0 setuptools Cython mock future
 
 # Install the COCO API
 RUN git clone https://github.com/cocodataset/cocoapi.git
