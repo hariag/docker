@@ -9,8 +9,8 @@ RUN sed -i 's@//archive.ubuntu@//mirrors.cn99@' /etc/apt/sources.list
 apt install git vim yasm libfrei0r-ocaml-dev pkg-config ccache cmake automake autoconf libfreetype6-dev libfribidi-dev libfontconfig-dev libfdk-aac-dev
 apt install libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libopenjp2-7-dev libsoxr-dev libspeex-dev libtheora-dev 
 apt install libvo-amrwbenc-dev libvorbis-dev libvpx-dev libwebp-dev libx264-dev libx265-dev libxvidcore-dev libxml2-dev 
-
-
+apt install libatlas-base-dev liblapacke-dev   libssl1.0.0  libgstreamer1.0-0   gstreamer1.0-tools  gstreamer1.0-plugins-good  gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly  gstreamer1.0-libav  libgstrtspserver-1.0-0  libjansson4
+apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libdc1394-22-dev libgtk2.0-dev libeigen3-dev
 
 
 # cd ../opus-1.1.1; ./configure --prefix=/usr/local/; make -j32; make install
