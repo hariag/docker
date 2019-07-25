@@ -1,7 +1,16 @@
-FROM         ubuntu:16.04
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 MAINTAINER    Haria Guo(haria.guo@gmail.com)
 
-#RUN sed -i 's@//archive.ubuntu@//mirrors.aliyun@' /etc/apt/sources.list
+RUN sed -i 's@//archive.ubuntu@//mirrors.cn99@' /etc/apt/sources.list
+
+
+# PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig/:$PKG_CONFIG_PATH
+
+apt install git vim yasm libfrei0r-ocaml-dev pkg-config ccache cmake automake autoconf libfreetype6-dev libfribidi-dev libfontconfig-dev libfdk-aac-dev
+
+git clone --recursive https://github.com/FFmpeg/nv-codec-headers && cd nv-codec-headers && make && make install && cd ..&& rm -rf nv-codec-headers
+
+
 
 RUN apt update && apt install -y git wget procps vim net-tools unzip build-essential libxvidcore-dev libx264-dev libx265-dev  python-numpy python-dev cmake libavcodec-dev libavformat-dev libswscale-dev libgphoto2-dev libavresample-dev libgtk2.0-dev
 
